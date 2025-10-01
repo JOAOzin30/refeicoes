@@ -105,6 +105,11 @@ $routes->group('sys', ['filter' => 'session'], static function ($routes) {
         $routes->post('delete', 'SolicitacaoRefeicoesController::delete');
     });
 
+      //==============================================================
+    // Rotas de Análise de solicitação
+    //==============================================================
+   $routes->get('analise', 'AnaliseSolicitacaoController::index');
+
     //==============================================================
     // Rotas de Restaurante - Acesso para 'restaurante'
     // CORREÇÃO: Uso correto de filtro único.
